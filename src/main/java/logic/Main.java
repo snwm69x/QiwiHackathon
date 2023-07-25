@@ -1,5 +1,6 @@
 package logic;
 
+import java.io.File;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -51,6 +52,12 @@ public class Main {
             return;
         }
         date = outputFormat.format(parsedDate);
+
+        // delete file if exists to avoid answer from previous request
+        File file = new File("C:\\programming\\qiwi\\qiwihackathon\\src\\main\\java\\temp\\response.xml");
+        if (file.exists()) {
+            file.delete();
+        }
 
         APIClient apiClient = new APIClient();
         apiClient.requestToApi(date);
