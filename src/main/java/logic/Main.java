@@ -65,7 +65,7 @@ public class Main {
 
         // Создаем объект класса XMLParser
         XMLParser xmlParser = new XMLParser();
-        List<Valute> ans = xmlParser.xmlToJavaObject("src/main/java/temp/response.xml");
+        List<Valute> ans = xmlParser.xmlToJavaObject("C:\\programming\\qiwi\\qiwihackathon\\src\\main\\java\\temp\\response.xml");
 
         // Создаем объект класса FindAndFormatCout
         FindAndFormatCout findAndFormatCout = new FindAndFormatCout();
