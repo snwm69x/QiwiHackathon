@@ -61,7 +61,7 @@ public class Main {
 
         APIClient apiClient = new APIClient();
         apiClient.requestToApi(date);
-
+        
         XMLParser xmlParser = new XMLParser();
         List<Valute> ans = xmlParser.xmlToJavaObject("C:\\programming\\qiwi\\qiwihackathon\\src\\main\\java\\temp\\response.xml");
 
