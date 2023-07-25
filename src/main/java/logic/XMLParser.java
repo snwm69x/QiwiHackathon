@@ -3,10 +3,8 @@ package logic;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-
 import entities.ValCurs;
 import entities.Valute;
-
 import java.io.File;
 import java.util.List;
 
@@ -24,5 +22,5 @@ public class XMLParser {
             e.printStackTrace();
         }
         return null;
-}
+    }
 }
