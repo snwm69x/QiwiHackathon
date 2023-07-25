@@ -1,20 +1,14 @@
 package logic;
 
 import java.io.BufferedReader;
-import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.io.BufferedReader;
-    import java.io.IOException;
-    import java.io.InputStreamReader;
-    import java.net.HttpURLConnection;
-    import java.net.URL;
-    import java.nio.file.Files;
-    import java.nio.file.Paths;
-    import java.util.logging.Level;
-    import java.util.logging.Logger;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class APIClient {
     final static String apiUrl = "http://www.cbr.ru/scripts/XML_daily.asp?date_req=";
